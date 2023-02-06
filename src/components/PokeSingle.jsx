@@ -21,7 +21,7 @@ const PokeSingle = () => {
                 setData(res.data);
                 setIsLoading(false);
             })
-    }, []);
+    }, [params.pokesingle]);
 
     if (isLoading) {
         return <p>Loading... </p>

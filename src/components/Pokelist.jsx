@@ -7,10 +7,9 @@ import classes from './Pokelist.module.css';
 
 const Pokelist = () => {
     const [data, setData] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
-        setIsLoading(true);
+
         axios
             .get('https://pokeapi.co/api/v2/pokemon?limt=151&offset=0')
             .then((res) => {
@@ -20,7 +19,7 @@ const Pokelist = () => {
 
                 Promise.all(fetches).then((res) => {
                     setData(res);
-                    setIsLoading(true);
+
                 })
             });
     }, [])
