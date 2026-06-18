@@ -36,5 +36,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "overrides": {
+    "react-scripts": {
+      "@svgr/webpack": "8.1.0",
+      "workbox-webpack-plugin": "7.3.0"
+    },
+    "postcss-svgo": "^6.0.0",
+    "magic-string": "^0.30.17"
   }
 }
